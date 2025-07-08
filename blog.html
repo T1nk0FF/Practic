@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadoMira</title>
+    <link rel="icon" href="img/Logo,RadoMira,dog, _poodle,b_w (1) (1).jpg" type="image/png">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="Blog.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/ChatGPT Image 8 июл. 2025 г., 23_26_34.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="menu-container">   
+            <ul class="menu1">
+                <li><a href="galery.html" class="menu">Галерея</a></li>
+                <li><a href="Services.html" class="menu">Прайс лист</a></li>
+                <li><a href="Reviews.html" class="menu">Отзывы</a></li>
+                <li><a href="Blog.html" class="menu">Советы по уходу</a></li>  
+            </ul>
+        </div>
+        <div class="booking-container">
+            <button id="openBooking" class="booking-btn">Онлайн запись</button>
+        </div>
+    </div>
+</header> 
+
+    <!-- Оверлей -->
+<div id="overlay" class="overlay" onclick="closeModal()"></div>
+
+<!-- Модальное окно -->
+<div id="modal" class="modal">
+  <button class="close-modal" onclick="closeModal()">×</button>
+  <h2>Запись на услугу</h2>
+  <form id="bookingForm">
+    <label>Услуга:
+      <select id="service" required>
+        <option value="">Выбор услуги</option>
+        <option>Стрижка</option>
+        <option>Гигиенический груминг</option>
+        <option>Мытье</option>
+        <option>Тримминг</option>
+        <option>Чистка зубов</option>
+        <option>Окрашивание шерсти</option>
+        <option>Стрижка когтей</option>
+      </select>
+    </label>
+    <label>Мастер:
+      <select id="master" required>
+        <option value="">Выбор мастера</option>
+        <option>Алексей</option>
+        <option>Мария</option>
+        <option>Ирина</option>
+      </select>
+    </label>
+    <label>Дата:
+      <input type="date" id="date" required>
+    </label>
+    <label>Время:
+      <input type="time" id="time" required>
+    </label>
+    <label>Имя:
+      <input type="text" id="name" required>
+    </label>
+    <label>Телефон:
+      <input type="tel" id="phone" required placeholder="+7 (___) ___-__-__">
+    </label>
+    <button type="submit">Записаться</button>
+  </form>
+</div>
+
+
+<main>
+  <section class="blog-section">
+  <h1>Советы по уходу</h1>
+  <div class="blog-grid">
+    <article class="blog-card">
+      <img src="img/Blog/pexels-goochie-poochie-19145878.jpg" alt="Уход за шерстью" class="blog-img">
+      <h2>Как правильно ухаживать за шерстью питомца</h2>
+      <p>Советы по ежедневному уходу, выбору расчесок и средств для разных пород.</p>
+      <a href="#" class="blog-readmore">Читать далее</a>
+    </article>
+    <article class="blog-card">
+      <img src="img/Blog/pexels-tima-miroshnichenko-6131542.jpg" alt="Гигиена" class="blog-img">
+      <h2>Гигиенические процедуры: что важно знать</h2>
+      <p>Почему регулярная чистка ушей и зубов важна для здоровья вашего любимца.</p>
+      <a href="#" class="blog-readmore">Читать далее</a>
+    </article>
+    <article class="blog-card">
+      <img src="img/Blog/pexels-goochie-poochie-19145872.jpg" alt="Стрижка когтей" class="blog-img">
+      <h2>Стрижка когтей без стресса</h2>
+      <p>Как подготовить питомца к процедуре и сделать её максимально комфортной.</p>
+      <a href="#" class="blog-readmore">Читать далее</a>
+    </article>
+    <article class="blog-card">
+      <img src="img/Blog/23.jpg" alt="Сезонная линька" class="blog-img">
+      <h2>Сезонная линька: как помочь питомцу</h2>
+      <p>Что делать во время линьки, чтобы шерсть не была по всему дому.</p>
+      <a href="#" class="blog-readmore">Читать далее</a>
+    </article>
+    <article class="blog-card">
+      <img src="img/Blog/pexels-nishizuka-25426-485294.jpg" alt="Выбор шампуня" class="blog-img">
+      <h2>Как выбрать шампунь для животного</h2>
+      <p>На что обращать внимание при выборе средств для мытья собак и кошек.</p>
+      <a href="#" class="blog-readmore">Читать далее</a>
+    </article>
+    <article class="blog-card">
+      <img src="img/Blog/pexels-artem-korsakov-132129914-12283472.jpg" alt="Груминг щенка" class="blog-img">
+      <h2>Первый груминг щенка: советы владельцам</h2>
+      <p>Как подготовить малыша к первой стрижке и сделать визит приятным.</p>
+      <a href="#" class="blog-readmore">Читать далее</a>
+    </article>
+<article class="blog-card">
+  <img src="img/Blog/pexels-ermelinda-maglione-1106070-6604130.jpg" alt="Уход за ушами" class="blog-img">
+  <h2>Как правильно чистить уши питомцу</h2>
+  <p>Пошаговая инструкция и советы по безопасной чистке ушей у собак и кошек.</p>
+  <a href="#" class="blog-readmore">Читать далее</a>
+</article>
+<article class="blog-card">
+  <img src="img/Blog/pexels-tima-miroshnichenko-6131543.jpg" alt="Антистресс" class="blog-img">
+  <h2>Антистресс для животных: как облегчить визит к грумеру</h2>
+  <p>Рекомендации по подготовке питомца к стрижке и снижению тревожности.</p>
+  <a href="#" class="blog-readmore">Читать далее</a>
+</article>
+<article class="blog-card">
+  <img src="img/Blog/kak-uhajivat-za-lapami-letom-735x400.jpg" alt="Уход за лапами" class="blog-img">
+  <h2>Уход за лапами: защита зимой и летом</h2>
+  <p>Как ухаживать за подушечками лап, чтобы избежать трещин и раздражения.</p>
+  <a href="#" class="blog-readmore">Читать далее</a>
+</article>
+  </div>
+</section>
+</main>
+
+
+<!-- Контакты внизу страницы -->
+<footer class="footer-contacts">
+  <div class="contacts-row">
+    <span>Адрес: г. Москва, ул. Татарская, д. 6</span>
+    <span class="divider">|</span>
+    <span>Эл. почта: maganova_poli****</span>
+    <span class="divider">|</span>
+    <span>Номер телефона: +7-977-330-**-**</span>
+  </div>
+</footer>
+
+</body>
+</html>
